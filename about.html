@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="./assets/css/about.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omer C.</title>
+</head>
+
+<body>
+    <div id="navmenu">
+        <ul class="menu_parent hidden">
+            <a href="#"><li id="logo">PixelSchools</li></a>
+            <a href="#">
+                <li class="menu_item active">About</li>
+            </a>
+            <a href="./html.html">
+                <li class="menu_item">HTML</li>
+            </a>
+        </ul>
+        <div id="collapserbox" onclick="handleNavMenu();">
+            <span id="collapser">></span>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <h1>Omer C. Resume</h1>
+        <p><img src="./assets/images/omer.jpg"></p>
+        <h4> Objective </h4>
+        <p> To get out of studying and become a freelancer!Ican't take it any more. Please hire me! I am despreate.</p>
+        <p>I am available starting Summer 2022 for any computer job, any place. I'll move if I have to. I'll live in a
+            van,
+            I will fix bugs. Please please please<br>Note: I am very bad at designing.</p>
+
+        <h4> Education </h4>
+        <ul>
+            <li> Ibrahim Onal Science High School, 2015-2019, Bursa/Turkey
+            <li> Bandirma Onyedi Eylul University, 2020-____, Balikesir/Turkey
+        </ul>
+        <hr>
+    </div>
+
+    <script>
+        var navmenu = document.getElementById("navmenu");
+        var isNavOpen = false;
+
+        function handleNavMenu() {
+            if (isNavOpen) {
+                navmenu.children[0].classList.add("hidden");
+                document.getElementById("collapser").innerText = ">";
+                isNavOpen = false;
+            } else {
+                navmenu.children[0].classList.remove("hidden");
+                document.getElementById("collapser").innerText = "<";
+                isNavOpen = true;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to HTML</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div id="navmenu">
+        <ul class="menu_parent hidden">
+            <a href="#"><li id="logo">PixelSchools</li></a>
+            <a href="./about.html"><li class="menu_item">About</li></a>
+            <a href="#"><li class="menu_item active">HTML</li></a>
+            <li>
+                <ul class="mini_parent">
+                    <a href="#tag_html">
+                        <li class="mini_item">&lt;html&gt;</li>
+                    </a><a href="#tag_head">
+                        <li class="mini_item">&lt;head&gt;</li>
+                    </a><a href="#tag_body">
+                        <li class="mini_item">&lt;body&gt;</li>
+                    </a><a href="#tag_hn">
+                        <li class="mini_item">&lt;hn&gt;</li>
+                    </a><a href="#tag_p">
+                        <li class="mini_item">&lt;p&gt;</li>
+                    </a><a href="#tag_img">
+                        <li class="mini_item">&lt;img&gt;</li>
+                    </a><a href="#tag_a">
+                        <li class="mini_item">&lt;a&gt;</li>
+                    </a><a href="#tag_iframe">
+                        <li class="mini_item">&lt;iframe&gt;</li>
+                    </a>
+                </ul>
+            </li>
+        </ul>
+        <div id="collapserbox" onclick="handleNavMenu();">
+            <span id="collapser">></span>
+        </div>
+    </div>
+    <div>
+        <div class="category_wrapper">
+            <h1 class="category_header">Ready Your Web Page</h1>
+            <div class="category_content">
+                <div id="tag_html" class="info_wrapper">
+                    <h2 class="info_header">&lt;html&gt; &lt;/html&gt;</h2>
+                    <p class="info_content">The &lt;html&gt; tag represents the root of an HTML document. The
+                        &lt;html&gt; tag is the container for all other HTML elements (except for the
+                        &lt;!DOCTYPE&gt; tag).<br /> Note: You should always include the lang attribute
+                        inside the &lt;html&gt; tag, to declare the language of the Web page. This is meant to
+                        assist search engines and browsers.</p>
+                    <div class="code_box">
+                        <button class="code_box_toggle">Show Code</button>
+                        <button class="code_box_copy hidden">Copy
+                            Code</button>
+                        <pre class="hidden">
+&lt;!DOCTYPE html&gt; <span class="commented">&lt;!-- In this line we are declaring document type which is HTML --&gt;</span>
+&lt;html&gt;
+  <span class="commented">&lt;!-- Our content will be here on later --&gt;</span>
+  <span class="commented">&lt;!-- Also this is a multiline comment. Anything you write between theese arrows will be ignored. --&gt;</span>
+&lt;/html&gt;
+</pre>
+                    </div>
+                </div>
+                <div id="tag_head" class="info_wrapper">
+                    <h2 class="info_header">&lt;head&gt; &lt;/head&gt;</h2>
+                    <p class="info_content">The &lt;head&gt; element is a container for metadata (data about data)
+                        and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.<br /> Metadata is data
+                        about the HTML document. Metadata is not displayed.<br /> Metadata
+                        typically define the document title, character set, styles, scripts, and other meta
+                        information.
+                    </p>
+                    <div class="code_box">
+                        <button class="code_box_toggle">Show Code</button>
+                        <button class="code_box_copy hidden">Copy
+                            Code</button>
+                        <pre class="hidden">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    <span class="commented">&lt;!-- This is character set we are using. UTF-8 is one of the most common ones. --&gt;</span>
+    &lt;meta charset="UTF-8"&gt;
+
+    <span class="commented">&lt;!-- This is title shown in the page tab in browser. --&gt;</span>
+    &lt;title&gt;How to HTML&lt;/title&gt;
+
+    <span class="commented">&lt;!-- This one is for external CSS files. You can import them like this. --&gt;</span>
+    &lt;link rel="stylesheet" href="style.css"&gt;
+
+    <span class="commented">&lt;!-- Or you can apply CSS style interial between style tags. --&gt;</span>
+    &lt;style&gt;&lt;/style&gt;
+
+    <span class="commented">&lt;!-- You can write JS codes between script tags. With keyword 'src' you can import external files. --&gt;</span>
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+
+  &lt;/head&gt;
+&lt;/html&gt;</pre>
+                    </div>
+                </div>
+                <div id="tag_body" class="info_wrapper">
+                    <h2 class="info_header">&lt;body&gt; &lt;/body&gt;</h2>
+                    <p class="info_content">The &lt;body&gt; tag defines the document's body.<br />
+                        The &lt;body&gt; element contains all the contents of an HTML document, such as headings,
+                        paragraphs, images, hyperlinks, tables, lists, etc.<br />
+                        Note: There can only be one &lt;body&gt; element in an HTML document.
+                    </p>
+                    <div class="code_box">
+                        <button class="code_box_toggle">Show Code</button>
+                        <button class="code_box_copy hidden">Copy
+                            Code</button>
+                        <pre class="hidden">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;How to HTML&lt;/title&gt;
+    &lt;style&gt;&lt;/style&gt;
+    &lt;script&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    <span class="commented">&lt;!-- All the content will be here in body. --&gt;</span>
+    Hello &lt;br /&gt;<span class="commented">&lt;!-- &lt;br&gt; or &lt;br /&gt; stands for breaking line. In html your line-breaks in code doesn't show in page except 'pre' tag. --&gt;</span>
+    World!
+
+    <span class="commented">&lt;!-- Your page is ready(kinda). Copy the code and try it on your computer. You can create an 'index.html' file and edit with your IDE. --&gt;</span>
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Add Your Contents -->
+        <div class="category_wrapper">
+            <h1 class="category_header">
+                Add Your Contents
+            </h1>
+            <div class="category_content">
+                <div id="tag_hn" class="info_wrapper">
+                    <h2 class="info_header">&lt;h1&gt; to &lt;h6&gt;</h2>
+                    <p class="info_content">The &lt;h1&gt; to &lt;h6&gt; tags are used to define HTML headings.<br />
+                        &lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important
+                        heading.<br />
+                        Note: Only use one &lt;h1&gt; per page - this should represent the main heading/subject for the
+                        whole page. Also, do not skip heading levels - start with &lt;h1&gt;, then use &lt;h2&gt;, and
+                        so on.
+                    </p>
+                    <div class="result_box">
+                        <h1>This is a h1 text.</h1>
+                        <h2>This is a h2 text.</h2>
+                    </div>
+                </div>
+                <div id="tag_p" class="info_wrapper">
+                    <h2 class="info_header">&lt;p&gt; &lt;/p&gt;</h2>
+                    <p class="info_content">The &lt;p&gt; tag defines a paragraph.<br />
+                        Browsers automatically add a single blank line before and after each &lt;p&gt; element.
+                    </p>
+                    <div class="result_box">
+                        <p>This is a paragraph?</p>
+                    </div>
+                </div>
+                <div id="tag_img" class="info_wrapper">
+                    <h2 class="info_header">&lt;img&gt;</h2>
+                    <p class="info_content">
+                        The &lt;img&gt; tag is used to embed an image in an HTML page.<br />
+                        Images are not technically inserted into a web page; images are linked to web pages. The
+                        &lt;img&gt; tag creates a holding space for the referenced image.<br />
+                        The &lt;img&gt; tag has two required attributes:<br />
+                        src - Specifies the path to the image<br />
+                        alt - Specifies an alternate text for the image, if the image for some reason cannot be
+                        displayed<br />
+                        Note: Also, always specify the width and height of an image. If width and height are not
+                        specified, the page might flicker while the image loads.
+                    </p>
+                    <div class="result_box">
+                        <img height="200px" src="./assets/images/cat.jpg">
+                    </div>
+                </div>
+                <div id="tag_a" class="info_wrapper">
+                    <h2 class="info_header">&lt;a&gt; &lt;/a&gt;</h2>
+                    <p class="info_content">
+                        The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.<br />
+                        The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the
+                        link's destination.<br />
+                        By default, links will appear as follows in all browsers:<br />
+                        -An unvisited link is underlined and blue<br />
+                        -A visited link is underlined and purple<br />
+                        -An active link is underlined and red
+                    </p>
+                    <div class="result_box">
+                        <a href="https://github.com/uPixelar">My Github</a>
+                    </div>
+                </div>
+                <div id="tag_iframe" class="info_wrapper">
+                    <h2 class="info_header">&lt;iframe&gt; &lt;/iframe&gt;</h2>
+                    <p class="info_content">
+                        The &lt;iframe&gt; tag specifies an inline frame.<br />
+                        An inline frame is used to embed another document within the current HTML document.
+                    </p>
+                    <div class="result_box">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ok-plXXHlWw" allowfullscreen="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background: #77b;" class="category_wrapper">
+            <h1 class="category_header">End of the Lesson</h1>
+            <div class="category_content">
+                <div class="info_wrapper">
+                    <div style="font-size: 1.4em;" class="info_content">
+                        Thanks for viewing page.<br />
+                        For more documentation about HTML you can visit <a href="https://www.w3schools.com/html/default.asp">W3Schools</a>. There are lots of things about HTML that I cannot fit into a little project.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
