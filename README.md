@@ -1,4 +1,5 @@
 # html_tutorial_page
+I created this project for an assigment of Internet Based Programming Lecture at Bandirma Onyedi Eylul University<br>
 about.html is for fun, not a serious job, and example page for navigation bar.
 <br><br>
 In the html.html it has Code Boxes that you can show/hide or copy the code.<br>
